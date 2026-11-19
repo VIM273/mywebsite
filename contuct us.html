@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"
+<meta name="viewport"content="width=device-width, initial-scale=1">
+<title>Freshfruits</title>
+<style>
+  body{margin: 0;font-family: Arial,sans-serif;color: #222;background: #fffbf2;}
+  header{display: flex;justify-content: space-between;align-items: center;padding: 20px 30px;}
+  header h2{margin: 0;color: #2f6b3a;}
+  nav a{margin-left: 20px;text-decoration: none;color: #222;font-weight: bold;}
+  .hero{text-align: center;padding: 60px 20px;background: #f7e3c3;}
+  .hero h1{font-size: 38px;margin: 0 0 10px;}
+  .hero p{font-size: 18px;margin: 0;}
+  .container{display: flex;flex-wrap: wrap;gap: 30px;max-width: 900px;margin: 0 auto;padding: 50px 30px;}
+  .info{flex: 1 1 250px;}
+  .info h2{color: #2f6b3a;margin-top: 0;}
+  .info p{line-height: 1.6;}
+  form{flex: 1 1 350px;background: #fff;border: 1px solid #eadfc8;border-radius: 15px;padding: 25px;}
+  label{display: block;margin: 12px 0 5px;font-weight: bold;}
+  input,textarea{width: 100%;padding: 12px;border: 1px solid#ccc;border-radius: 8px;font-size: 16px;box-sizing: border-box;}
+  textarea{height: 120px;resize: vertical;}
+  button{margin-top: 18px;background: #2f6b3a;color: #fff;border: none;padding: 14px 28px;border-radius: 30px;font-size: 16px;font-weight: bold;cursor: pointer;}
+  #thanks{display:none;margin-top: 15px;padding: 12px;background: #e4f1e3;color: #1f4a28;border-radius: 8px;font-weight: bold;}
+  footer{background: #1f4a28;color: #fff;text-align: center;padding: 25px;}
+</style>
+</head> 
+<body>
+ <header>
+  <h2>Freshfruits</h2>
+  <nav>
+   <a href="home.html">home</a>
+   <a href="About us.html">about us</a>
+   <a href="contuct us.html">contuct us</a> 
+  </nav>  
+ </header> 
+ 
+ <section class="container">
+  <div class="info">
+    <h2>Get in touch</h2>
+    <p><strong>Location</strong><br>Kampala,Uganda</p>
+    <p><strong>Phone:</strong><br>[0749976256]</p>
+    <p><strong>Email:</strong><br>[VIM125133@Gmail.com]</P>
+    <p><stong>Hours:</stong><br>[8am-9pm]</p>  
+  </div>
+
+  <form id="contuct from">
+    <label for="name">Name</label>
+    <input type="text"id="name"required>
+
+    <lable for="email">Email</lable>
+    <input type="email"id="email"required>
+
+    <lable for="message">Message</lable>
+    <textarea id="message"required></textarea>
+
+    <button type="submit">send message</button>
+    <div id="thanks">Thank you! We will get back to you soon</div>
+  </form>
+ </section>
+
+ <footer>
+  <p>Kampala,Uganda |[0749976256] |[VIM125133@Gmail.com]/p>
+   <P>&copy;2026 Freshfruits</P> 
+ </footer>
+
+ <script>
+  document.getElementsById("contact form").addEventListener("submit",function(e){
+    e.preventDefault();
+    document.getElementById("thanks").style.display="block";
+    this.reset().
+  });
+ </script> 
+ </section>
+</body>
+</html>
